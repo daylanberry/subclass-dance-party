@@ -1,6 +1,6 @@
 // Creates and returns a new dancer object that can step
 var makeDancer = function(top, left, timeBetweenSteps) {
-
+//test commit
   var dancer = {};
 
   // use jQuery to create an HTML <span> tag
