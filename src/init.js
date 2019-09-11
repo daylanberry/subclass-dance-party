@@ -71,16 +71,15 @@ $(document).ready(function() {
   $('.line-up').on('click', function(event){
     var dancerMakerFunctionName = $(this).data('data-dancer-maker-function-name');
 
-console.log (window.dancers);
-
     var dancerMakerFunction = window[dancerMakerFunctionName];
 
-     for (var i = 0; i < window.dancers.length; i++){s
+     for (var i = 0; i < window.dancers.length; i++){
         window.dancers[i].$node.css({'left': '0'})
 
     }
 
   })
+
 
 
 

@@ -10,6 +10,15 @@ var MakeDancer = function(top, left, timeBetweenSteps) {
   this.$node = $('<span class="dancer"></span>');
   this.step();
   this.setPosition(top, left)
+
+  this.$node.on('mouseover', function() {
+    $(this).css({border : '100px solid black'})
+  })
+
+  this.$node.on('mouseleave', function() {
+    $(this).css({border : '60px solid white'})
+  })
+
 };
 
 MakeDancer.prototype.step = function() {

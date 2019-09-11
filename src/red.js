@@ -2,7 +2,7 @@ var redDancer = function(top, left, timeBetweenSteps, $node) {
 
   MakeDancer.call(this, top, left, timeBetweenSteps);
 
-  this.$node.addClass('red')
+  this.$node.addClass('red');
 
 };
 
