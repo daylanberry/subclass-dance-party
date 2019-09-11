@@ -14,13 +14,24 @@ body, a:link, a:visited, a:active{
   float:right;
 }
 .topbar{
-  height:32px;
+  height:64px;
   background-color: #555;
 }
 .title{
   background-color: #777;
 }
 .dancer{
+  border:10px solid blue;
+  border-radius:10px;
+  position:absolute;
+}
+.yellow{
+  border:10px solid yellow;
+  border-radius:10px;
+  position:absolute;
+}
+
+.red{
   border:10px solid red;
   border-radius:10px;
   position:absolute;
