@@ -4,7 +4,7 @@ $(document).ready(function() {
   $('.addBlinkyDancer').on('click', function(event) {
     /* This function sets up the click handlers for the create-dancer
      * buttons on dancefloor.html. You should only need to make one small change to it.
-     * As long as the "data-dancer-maker-function-name" attribute of a
+     * As long as the  "data-dancer-maker-function-name" attribute of a
      * class="addDancerButton" DOM node matches one of the names of the
      * maker functions available in the global scope, clicking that node
      * will call the function to make the dancer.
@@ -75,17 +75,13 @@ console.log (window.dancers);
 
     var dancerMakerFunction = window[dancerMakerFunctionName];
 
-     for (var i = 0; i < window.dancers.length; i++){
-e
+     for (var i = 0; i < window.dancers.length; i++){s
         window.dancers[i].$node.css({'left': '0'})
 
     }
 
   })
 
-  $('.yellow').mouseover(function(){
-    console.log('click')
-  })
 
 
 
