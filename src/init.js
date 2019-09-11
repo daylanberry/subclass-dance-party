@@ -28,6 +28,8 @@ $(document).ready(function() {
       Math.random() * 1000
     );
     $('body').append(dancer.$node);
+
+    window.dancers.push(dancer)
   });
 
 
@@ -44,6 +46,7 @@ $(document).ready(function() {
     );
 
     $('body').append(dancer.$node);
+    window.dancers.push(dancer);
   });
 
 
@@ -60,9 +63,32 @@ $(document).ready(function() {
       Math.random() * 1000
     );
 
-
     $('body').append(dancer.$node);
+    window.dancers.push(dancer);
+
   });
+
+  $('.line-up').on('click', function(event){
+    var dancerMakerFunctionName = $(this).data('data-dancer-maker-function-name');
+
+console.log (window.dancers);
+
+    var dancerMakerFunction = window[dancerMakerFunctionName];
+
+     for (var i = 0; i < window.dancers.length; i++){
+e
+        window.dancers[i].$node.css({'left': '0'})
+
+    }
+
+  })
+
+  $('.yellow').mouseover(function(){
+    console.log('click')
+  })
+
+
+
 
 });
 

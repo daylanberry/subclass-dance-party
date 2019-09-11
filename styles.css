@@ -1,11 +1,17 @@
 body, html{
   height:100%;
+
 }
-body{
+body, html{
   margin: 0px;
-  background-color:#444;
+  background: url('/Users/student/Desktop/hrla32-subclass-dance-party/background.jpg') no-repeat;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+};
   font-size: 18px;
-}
 body, a:link, a:visited, a:active{
   color: lightblue;
 }
@@ -14,7 +20,7 @@ body, a:link, a:visited, a:active{
   float:right;
 }
 .topbar{
-  height:64px;
+  height:0px;
   background-color: #555;
 }
 .title{
@@ -26,13 +32,30 @@ body, a:link, a:visited, a:active{
   position:absolute;
 }
 .yellow{
-  border:10px solid yellow;
+  border: 60px solid yellow;
   border-radius:10px;
   position:absolute;
 }
 
 .red{
-  border:10px solid red;
+  border:40px solid red;
   border-radius:10px;
   position:absolute;
+}
+
+.addBlinkyDancer, .addRedButton, .addYellowButton, .line-up{
+
+  color: white;
+}
+
+.addRedButton{
+  color: red;
+}
+
+.addYellowButton{
+  color: yellow;
+}
+
+.addBlinkyDancer {
+  color: black;
 }
